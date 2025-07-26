@@ -67,7 +67,7 @@ Pharma Warehouse
 Imagine a pharmaceutical warehouse where medicines are stored, picked, packed, and shipped. There are thousands of SKUs (stock keeping units), frequent inventory updates, temperature-sensitive drugs, and risk of expired or counterfeit items. The company wants to optimize operations, reduce losses, and improve customer service.
 
 Machine Learning Categories:
-Supervised Learning
+1) Supervised Learning
 Definition: Model learns from labeled data. It knows the "correct" answers during training.
 
 Goal: Predict an outcome based on input features.
@@ -83,4 +83,51 @@ Stock availability
 Transport provider
 Historical delay record
 Label: Delivered_Late → Yes / No
+
+# Sample training data
+Order_ID | Distance_km | Weather | In_Stock | Delivered_Late
+-------- | ----------- | ------- | -------- | ---------------
+101      | 250         | Clear   | Yes      | No
+102      | 180         | Rainy   | No       | Yes
+103      | 120         | Clear   | Yes      | No
+
+
+Use Case: You train a supervised learning model like Random Forest or XGBoost to predict delivery delays in real time.
+
+2) Unsupervised Learning
+Definition: No labeled data; the algorithm tries to find hidden patterns or groupings.
+Goal: Discover segments or anomalies.
+
+💡 Pharma Warehouse Example:
+Problem: Detect unusual stock movement patterns or cluster similar products based on attributes.
+
+Input:
+Medicine ID
+Shelf Life
+Storage Temp
+Pick Frequency
+Volume per unit
+Price
+
+🧠 Use Case 1: Use clustering (e.g., KMeans) to group medicines into fast-moving, moderate-moving, and slow-moving classes to optimize shelf layout.
+🧠 Use Case 2: Use anomaly detection (e.g., Isolation Forest) to detect when a usually low-demand medicine suddenly starts moving unusually fast (possible fraud, counterfeit circulation, or health outbreak indicator).
+
+3. Semi-Supervised Learning
+Definition: Combines a small amount of labeled data with a large amount of unlabeled data.
+Goal: Improve performance when full labeling is too costly/time-consuming.
+
+💡 Pharma Warehouse Example:
+Problem: You want to classify drugs as "Critical", "Moderate", or "Low Priority" for temperature-sensitive handling, but only 5% of historical records are labeled.
+
+Data Available:
+Temperature control requirement
+Transportation mode
+Delivery delays
+Fragility
+Storage duration
+
+You use the small labeled dataset to initially train a model and apply it to unlabeled data to guess the remaining labels, then retrain the model with more confidence.
+
+🧠 Use Case: Efficient classification of cold-chain critical drugs without needing a pharmacist to manually label every entry.
+
 
