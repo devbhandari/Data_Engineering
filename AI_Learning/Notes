@@ -49,3 +49,38 @@ Set achievable goals in step 2
 Reward yourself upon achieving goals
 
 ##############################################################################################################################
+AI: consists of 
+    1)Computer Vision : 
+    2)NLP : 
+    3)Generative AI :
+    4)Deep Learning : Multi Layered neural networks,automatically extract features from big data 
+    5)Machine Learning: 
+        ~ Uses algorithms, requires feature engineering
+        ~ Teaches computer to learn from data, identify patterns and make decision
+        ~ Algorithms : used computational methods for learning, Does not rely on a fixed algorithm
+            a) Supervised learning models: train on labelled data to learn how to make inferenes on new data,Enabling them to predict otherwise unknown labels.
+            b) UnSupervised Learning models:Works without labels by finding patterns in data.
+            c) Semisupervised learning trains on relatively small subset of the data that is already labeled.
+
+Example : 
+Pharma Warehouse
+Imagine a pharmaceutical warehouse where medicines are stored, picked, packed, and shipped. There are thousands of SKUs (stock keeping units), frequent inventory updates, temperature-sensitive drugs, and risk of expired or counterfeit items. The company wants to optimize operations, reduce losses, and improve customer service.
+
+Machine Learning Categories:
+Supervised Learning
+Definition: Model learns from labeled data. It knows the "correct" answers during training.
+
+Goal: Predict an outcome based on input features.
+
+💡 Pharma Warehouse Example:
+Problem: Predict if a medicine will be delivered late based on various inputs.
+
+Input Features:
+Distance to delivery location
+Order time
+Weather condition
+Stock availability
+Transport provider
+Historical delay record
+Label: Delivered_Late → Yes / No
+
