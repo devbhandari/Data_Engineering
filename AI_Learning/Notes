@@ -61,6 +61,14 @@ AI: consists of
             a) Supervised learning models: train on labelled data to learn how to make inferenes on new data,Enabling them to predict otherwise unknown labels.
             b) UnSupervised Learning models:Works without labels by finding patterns in data.
             c) Semisupervised learning trains on relatively small subset of the data that is already labeled.
+            d) Reinforcement learning:an AI learning from the feedback.
+
+
+    ML Techniques:
+    1)Classfication:
+    2)Regression:
+    3)Clustering
+    4)Association finds items or event that co-occur
 
 Example : 
 Pharma Warehouse
