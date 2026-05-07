@@ -16,3 +16,10 @@ select 'hello' as msg
 """)
 df.show()
 # COMMAND ----------
+
+# day2
+from pyspark.sql.functions import col
+df_nyctaxi=spark.read.table("sample.nyctaxi.tripdata")
+display(df_nyctaxi)
+# df_nyctaxi_filter=df.nyctaxi.select(col("pickupz")
+# COMMAND ----------
